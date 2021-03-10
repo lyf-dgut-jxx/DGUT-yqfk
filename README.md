@@ -1,3 +1,4 @@
+本Repo仅修改为可自用版本，
 ## Usage
 
 ```
@@ -17,7 +18,7 @@ version: "3.1"
 
 services:
   yqfk:
-    image: masterkenway/dgut_yqfk
+    image: Rinbili/dgut_yqfk
     environment:
       - USERNAME=
       - PASSWORD=
@@ -27,12 +28,12 @@ services:
 
 ### 方法二 (screen)
 
-可以使用`screen`将程序放置在后台运行
+可以使用`screen`将程序放置在后台运行(Ctrl + A + D 离开 screen)
 
 ```shell script
-$ git clone https://github.com/MasterKenway/DGUT-yqfk.git && cd DGUT-yqfk 
-$ pip install -r requirements.txt # 如果运行时报错找不到模块，请确认安装了pip3并将本条命令开头的pip改为pip3
-$ screen -US yqfk # Ctrl + A + D 离开 screen
-$ python3 yqfk.py USERNAME PASSWORD SCKEY
+git clone https://github.com/Rinbili/DGUT-yqfk.git && cd DGUT-yqfk 
+pip3 install -r requirements.txt
+screen -US yqfk
+python3 yqfk.py USERNAME PASSWORD SCKEY
 ```
 
