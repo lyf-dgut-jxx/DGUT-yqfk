@@ -22,4 +22,4 @@ jobs:
                 USERNAME='${{ secrets.USERNAME }}'
                 PASSWORD='${{ secrets.USERPASSWD }}'
                 SCKEY='${{ secrets.SCKEY }}'
-                python yqfk.py  "${ USERNAME }" "${ PASSWORD }" "${ SCKEY }"
+                python yqfk.py
