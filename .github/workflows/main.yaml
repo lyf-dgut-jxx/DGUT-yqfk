@@ -17,12 +17,10 @@ jobs:
             - name: "Set up Python"
               uses: actions/setup-python@v1
               with:
-                python-version: 3.8
+                python-version: 3.7
 
-            - name: "安装依赖包requests"
-              run: pip3 install  requests
-            - name: "安装依赖包APScheduler"
-              run: pip3 install  APScheduler
+            - name: "requirements"
+              run: pip3 install -r requirements.txt
 
             - name: "Run yqfk"
-              run: python3 yqfk.py ${{ secrets.RINKE_YQFK }}
+              run: python yqfk.py ${{ secrets.RINKE_YQFK }}
