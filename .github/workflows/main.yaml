@@ -1,6 +1,6 @@
 name: main
 
-on:[push]
+on: [push]
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
             - name: "Set up Python"
               uses: actions/setup-python@v1
               with:
-                python-version: 3.7
+                python-version: 3.8
 
             - name: "requirements"
               run: pip3 install -r requirements.txt
