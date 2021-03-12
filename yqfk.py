@@ -8,10 +8,9 @@ import time
 import sys
 import json
 
-username = ""
-password = ""
-sckey = None  # ServerChan Key
-
+username = os.environ["USERNAME"]
+password = os.environ["PASSWORD"]
+sckey = os.environ["SCKEY"]
 
 def get_page(message, target):
     url = "https://cas.dgut.edu.cn/home/Oauth/getToken/appid/illnessProtectionHome/state/home.html"
@@ -116,7 +115,7 @@ if __name__ == '__main__':
     if len(sys.argv) < 3 or len(sys.argv) > 5:
         console_msg("参数出错", 1)
         console_msg(sys.argv[0] + " <username> <password> [<sckey>]")
-        exit(1)
+        console_msg("使用环境参数", 1)
     else:
         console_msg("Username: " + sys.argv[1])
         console_msg("Password: " + sys.argv[2])
