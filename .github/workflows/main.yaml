@@ -1,11 +1,6 @@
 name: main
 
-on:
-    workflow_dispatch:
-    schedule:
-        - cron: "*/60 */2  *  *  *"
-    watch:
-        types: [started]
+on:[push]
 
 jobs:
   build:
