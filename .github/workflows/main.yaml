@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
             - name: Checkout
-              uses: actions/checkout@maste 
+              uses: actions/checkout@master 
         
             - name: "Set up Python"
               uses: actions/setup-python@v1
@@ -15,9 +15,9 @@ jobs:
                 python-version: 3.8
 
             - name: "安装依赖包requests"
-              run: pip install  requests
+              run: pip3 install  requests
             - name: "安装依赖包APScheduler"
-              run: pip install  APScheduler
+              run: pip3 install  APScheduler
 
             - name: "Run yqfk"
               run: python yqfk.py "${Rinke_yqfk}"
