@@ -25,4 +25,4 @@ jobs:
               run: pip3 install  APScheduler
 
             - name: "Run yqfk"
-              run: python3 yqfk.py secrets.RINKE_YQFK
+              run: python3 yqfk.py ${{ secrets.RINKE_YQFK }}
