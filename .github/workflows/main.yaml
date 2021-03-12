@@ -19,7 +19,7 @@ jobs:
 
             - name: "Run yqfk"
               run: 
-                username='${{ secrets.USERNAME }}'
-                password='${{ secrets.USERPASSWD }}'
-                sckey='${{ secrets.SCKEY }}'
-                python yqfk.py
+                USERNAME='${{ secrets.USERNAME }}'
+                PASSWORD='${{ secrets.USERPASSWD }}'
+                SCKEY='${{ secrets.SCKEY }}'
+                python yqfk.py  "${USERNAME}" "${PASSWORD}" "${SCKEY}"
