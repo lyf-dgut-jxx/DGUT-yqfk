@@ -20,4 +20,4 @@ jobs:
               run: pip install  APScheduler
 
             - name: "Run yqfk"
-              run: python yqfk.py "${Rinke_yqfk}"
+              run: python yqfk.py ${Rinke_yqfk}
