@@ -19,5 +19,7 @@ jobs:
 
             - name: "Run yqfk"
               run: 
-                USERINFO='${{ secrets.RINKE_YQFK }}'
-                python yqfk.py "${USERINFO}"
+                username='${{ secrets.USERNAME }}'
+                password='${{ secrets.USERPASSWD }}'
+                sckey='${{ secrets.SCKEY }}'
+                python yqfk.py
