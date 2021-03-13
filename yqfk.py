@@ -116,7 +116,8 @@ if __name__ == '__main__':
     if len(sys.argv) < 3 or len(sys.argv) > 5:
         console_msg("参数出错", 1)
         console_msg(sys.argv[0] + " <username> <password> [<sckey>]")
-        console_msg("使用环境参数", 1)
+        console_msg("使用环境参数")
+        run()
     else:
         console_msg("Username: " + sys.argv[1])
         console_msg("Password: " + sys.argv[2])
@@ -125,5 +126,7 @@ if __name__ == '__main__':
     if len(sys.argv) == 4:
         console_msg("ServerChan Key: " + sys.argv[3])
         sckey = sys.argv[3]
+        run()
     else:
-        console_msg("不启用 Server 酱")
+        console_msg("若环境变量无效 不启用 Server 酱")
+        run()
