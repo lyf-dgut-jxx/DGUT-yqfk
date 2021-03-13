@@ -18,8 +18,9 @@ jobs:
               run: pip3 install -r requirements.txt
 
             - name: "Run yqfk"
-              run: 
+              env:
                 USERNAME: ${{ secrets.USERNAME }}
                 PASSWORD: ${{ secrets.USERPASSWD }}
                 SCKEY: ${{ secrets.SCKEY }}
+              run: 
                 python yqfk.py
