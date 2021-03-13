@@ -86,9 +86,10 @@ def post_message(text, desp=None):
         rep = requests.get(url=url).json()
         if rep['errno'] == 0:
             console_msg('ServerChan 发送成功', 0)
+            exit(0)
         else:
             console_msg('ServerChan 发送失败', 1)
-
+            exit(0)
 
 def run():
     message = []
