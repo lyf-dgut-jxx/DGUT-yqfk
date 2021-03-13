@@ -7,6 +7,7 @@ import requests
 import time
 import sys
 import json
+import os
 
 username = os.environ["USERNAME"]
 password = os.environ["PASSWORD"]
