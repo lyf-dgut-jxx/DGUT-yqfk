@@ -3,7 +3,7 @@ name: DGUT_yqfk
 on:
     workflow_dispatch:
     schedule:
-        - cron: "15 16,17,18  *  *  *"
+        - cron: "0 16,17,18  *  *  *"
     watch:
         types: [started]
 
